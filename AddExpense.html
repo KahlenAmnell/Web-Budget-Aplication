@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dodaj wydatek</title>
+</head>
+
+<body>
+    <nav>
+        <div>
+            <a href="MainMenu.html">Home</a>
+        </div>
+        <div>
+            <a href="Settings.html">Ustawienia</a>
+        </div>
+        <div>
+            <a href="Login.html">Wyloguj się</a>
+        </div>
+    </nav>
+    <main>
+        <nav>
+            <div>
+                <a href="AddIncome.html">Dodaj przychód</a>
+            </div>
+            <div>
+                <a href="AddExpense.html">Dodaj wydatek</a>
+            </div>
+            <div>
+                <a href="Balance.html">Przeglądaj bilans</a>
+            </div>
+        </nav>
+        <div>
+            <h1>Aplikacja budżetowa</h1>
+            <h2>Dodaj wydatek</h2>
+            <form action="/expense">
+                <div>
+                    <label for="amount">Kwota (podaj z kropką)</label>
+                    <input type="number" placeholder="Wpisz kwotę..." id="amount" required>
+                </div>
+                <div>
+                    <label for="date">Data</label>
+                    <input type="date" min="2000-01-01" id="date" required>
+                </div>
+                <div>
+                    <label for="paymentMethod">Sposób płatności</label>
+                    <select name="paymentMethod" id="paymentMethod" required>
+                        <option value="">Wybierz metodę płatności</option>
+                        <option value="salary">Gotówka</option>
+                        <option value="bankInterest">Karta debetowa</option>
+                        <option value="allegro">Karta kredytowa</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="category">Kategoria</label>
+                    <select name="category" id="category" required>
+                        <option value="">Wybierz kategorię</option>
+                        <option value="food">Jedzenie</option>
+                        <option value="apartment">Mieszkanie</option>
+                        <option value="transport">Transport</option>
+                        <option value="telecommunication">Telekomunikacja</option>
+                        <option value="healthcare">Opieka zdrowotna</option>
+                        <option value="clothes">Ubranie</option>
+                        <option value="hygiene">Higiena</option>
+                        <option value="children">Dzieci</option>
+                        <option value="entertainment">Rozrywka</option>
+                        <option value="trip">Wycieczka</option>
+                        <option value="training">Szkolenia</option>
+                        <option value="books">Książki</option>
+                        <option value="savings">Oszczędności</option>
+                        <option value="pension">Na złotą jesię, czyli emeryturę</option>
+                        <option value="debt">Spłata długów</option>
+                        <option value="donation">Darowizna</option>
+                        <option value="other">Inne wydatki</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="comment">Komentarz (opcjonalnie)</label>
+                    <div><textarea name="comment" id="comment" cols="30" rows="2" placeholder="Max. 250 znaków..."
+                            maxlength="250"></textarea>
+                    </div>
+                </div>
+                <button type="submit">Dodaj</button>
+                <button type="reset">Anuluj</button>
+            </form>
+        </div>
+    </main>
+    <footer>
+        Wszelkie prawa zastrzeżone &#169 2021
+    </footer>
+</body>
+
+</html>

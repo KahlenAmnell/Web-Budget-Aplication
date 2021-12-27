@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplikacja budżetowa</title>
+</head>
+
+<body>
+    <nav>
+        <div>
+            <a href="Login.html">Home</a>
+        </div>
+    </nav>
+    <main>
+        <h1>Budżet domowy</h1>
+        <form action="/serwer">
+            <h2>Rejestracja</h2>
+            <label for="name">Imię:</label>
+            <input type="text" id="name" placeholder="imię..." required>
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" placeholder="e-mail..." required>
+            <label for="password">Hasło (min. 6 znaków):</label>
+            <input type="password" id="password" placeholder="hasło..." minlength="6" autocomplete="new-password" required>
+            <button type="submit">Utwórz konto</button>
+            <button type="button"><a href="Login.html">Powrót do logowania</a></button>
+        </form>
+    </main>
+    <footer>
+        Wszelkie prawa zastrzeżone &#169 2021
+    </footer>
+</body>
+
+</html>

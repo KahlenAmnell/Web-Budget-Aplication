@@ -1,0 +1,94 @@
+body{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.3em;
+    background-image: url(https://images.unsplash.com/photo-1633158829875-e5316a358c6f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80);
+    background-size: cover;
+    min-height:98vh; 
+    display:flex; 
+    flex-direction:column; 
+    justify-content:space-between; 
+    flex-grow: calc();
+    margin: 0 0;
+}
+.mainText{
+    position: absolute;
+    flex-direction: column;
+    left:15%;
+    width: 85%;
+    margin-left: 2em;
+    margin-right: 2em;
+}
+
+a{
+    text-decoration: none;
+    padding: 0.5em;
+    color: #f9f9f4;
+    border-radius: 10px;
+}
+
+header{
+    background-color: #3f876c;
+    flex-grow: calc();
+    padding: 1.5rem;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+}
+main{
+    position: absolute;
+    top: 3.5em;
+    width: 100%;
+}
+main div{
+    display: flex;
+}
+
+footer{
+    margin: 0 auto;
+}
+
+header nav div{
+    display: inline;
+}
+
+header a{
+    background-color: #2d634f;
+}
+header a:hover{
+    background-color: #255040;
+}
+
+main div nav{
+    background-color: #6fa474;
+    position: fixed;
+    top: 3.5em;
+    left:0%;
+    bottom: 0%;
+    width: 15%;
+    z-index:1;
+}
+
+.settingsAndLogOutDiv{
+    position: fixed;
+    right: 1.5rem;
+}
+
+.mainNavButton{
+    background-color: #558059;
+    height: 1em;
+    width: 230px;
+    margin: 10px;
+    padding: 1.5rem;
+    display: block;
+}
+
+.mainNavButton:hover{
+    background-color: #3e6142;
+}
+
+
+h1{
+    text-align:center;
+    font-size: 3.4em;
+}
+

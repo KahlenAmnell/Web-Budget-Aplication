@@ -5,9 +5,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,800&family=Roboto:wght@100;300;500;700&display=swap"
+    <link
+        href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,800&family=Roboto:wght@100;300;500;700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="MainStyle.css">
+    <link rel="stylesheet" href="LoginStyle.css">
     <title>Aplikacja budżetowa</title>
 </head>
 
@@ -20,18 +22,30 @@
         </nav>
     </header>
     <main>
-        <h1>Budżet domowy</h1>
-        <form action="/serwer">
-            <h2>Rejestracja</h2>
-            <label for="name">Imię:</label>
-            <input type="text" id="name" placeholder="imię..." required>
-            <label for="email">E-mail:</label>
-            <input type="email" id="email" placeholder="e-mail..." required>
-            <label for="password">Hasło (min. 6 znaków):</label>
-            <input type="password" id="password" placeholder="hasło..." minlength="6" autocomplete="new-password"
-                required>
-            <button type="submit">Utwórz konto</button>
-            <button type="button"><a href="Login.html">Powrót do logowania</a></button>
+        <div class="header">
+            <h1>Budżet domowy</h1>
+        </div>
+        <form action="/serwer" id="signForm">
+            <div class="formTitle">
+                <h2>Rejestracja</h2>
+            </div>
+            <div class="inputField">
+                <label for="name">Imię:</label>
+                <input type="text" id="name" placeholder="imię..." required>
+            </div>
+            <div class="inputField">
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" placeholder="e-mail..." required>
+            </div>
+            <div class="inputField">
+                <label for="password">Hasło (min. 6 znaków):</label>
+                <input type="password" id="password" placeholder="hasło..." minlength="6" autocomplete="new-password"
+                    required>
+            </div>
+            <div class="buttonContainer">
+                <button type="submit" class="logInButton" id="signInButton">Utwórz konto</button>
+                <button type="button" class="logInButton"><a href="Login.html">Powrót do logowania</a></button>
+            </div>
         </form>
     </main>
     <footer>

@@ -13,8 +13,6 @@ form{
     display: block;
     flex-direction: column;
     justify-content: space-between;
-    max-height: 17em;
-    max-width: 17em;
     margin: 0 auto;
     padding: 1em;
     box-sizing: border-box;
@@ -37,7 +35,7 @@ h2{
     display: flex;
 justify-content: right;
 margin: 0.5em;
-
+margin-top: 1em;
 }
 
 .logInButton {
@@ -75,4 +73,16 @@ p{
 .signInContainer{
     display: flex;
     justify-content: center;
+}
+
+#signForm{
+    max-width: 25em;
+}
+
+#loginForm{
+    max-width: 19em;
+}
+
+#signInButton{
+    margin-right: 0.5em;
 }

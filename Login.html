@@ -9,31 +9,49 @@
         href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,800&family=Roboto:wght@100;300;500;700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="MainStyle.css">
+    <link rel="stylesheet" href="LoginStyle.css">
+
+
     <title>Aplikacja budzetowa</title>
 </head>
 
 <body>
     <header>
         <nav>
-            <div>
+            <div class="mainButton">
                 <a href="Login.html">Home</a>
             </div>
         </nav>
     </header>
     <main>
-        <h1>Budżet domowy</h1>
+        <div class="header">
+            <h1>Budżet domowy</h1>
+        </div>
         <form action="/main">
-            <h2>Logowanie</h2>
-            <input type="email" placeholder="Adres e-mail" id="email" name="email" required>
-            <input type="password" placeholder="Hasło" id="password" name="password" autocomplete="current-password"
-                required>
-            <button>Zaloguj</button>
-            Nie masz konta?
-            <a href="SignIn.html">Zarejestruj się</a>
+            <div class="formTitle">
+                <h2>Logowanie</h2>
+            </div>
+            <div class="inputField">
+                Adres e-mail:
+                <input type="email" placeholder="Adres e-mail" id="email" name="email" required>
+            </div>
+            <div class="inputField">
+                Hasło:
+                <input type="password" placeholder="Hasło" id="password" name="password" autocomplete="current-password"
+                    required>
+            </div>
+            <div class="buttonContainer">
+                <button class="logInButton">Zaloguj</button>
+            </div>
+
+            <p>Nie masz konta?</p>
+            <div class="signInContainer">
+                <a href="SignIn.html" class="logInButton">Zarejestruj się</a>
+            </div>
         </form>
     </main>
     <footer>
-        Wszelkie prawa zastrzeżone &#169 2021
+        <p>Wszelkie prawa zastrzeżone &#169 2021</p>
     </footer>
 </body>
 

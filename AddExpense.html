@@ -15,30 +15,34 @@
 <body>
     <header>
         <nav>
-            <div>
+            <div class="mainButton">
                 <a href="MainMenu.html">Home</a>
             </div>
-            <div>
-                <a href="Settings.html">Ustawienia</a>
-            </div>
-            <div>
-                <a href="Login.html">Wyloguj się</a>
+            <div class="settingsAndLogOutDiv">
+                <div class="settingsButton">
+                    <a href="Settings.html">Ustawienia</a>
+                </div>
+                <div class="logOutButton">
+                    <a href="Login.html">Wyloguj się</a>
+                </div>
             </div>
         </nav>
     </header>
     <main>
-        <nav>
-            <div>
-                <a href="AddIncome.html">Dodaj przychód</a>
-            </div>
-            <div>
-                <a href="AddExpense.html">Dodaj wydatek</a>
-            </div>
-            <div>
-                <a href="Balance.html">Przeglądaj bilans</a>
-            </div>
-        </nav>
         <div>
+            <nav>
+                <div>
+                    <a href="AddIncome.html" class="mainNavButton">Dodaj przychód</a>
+                </div>
+                <div>
+                    <a href="AddExpense.html" class="mainNavButton">Dodaj wydatek</a>
+                </div>
+                <div>
+                    <a href="Balance.html" class="mainNavButton">Przeglądaj bilans</a>
+                </div>
+            </nav>
+        </div>
+        <div class="mainText">
             <h1>Aplikacja budżetowa</h1>
             <h2>Dodaj wydatek</h2>
             <form action="/expense">

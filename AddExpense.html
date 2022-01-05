@@ -9,6 +9,7 @@
         href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,800&family=Roboto:wght@100;300;500;700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="MainStyle.css">
+    <link rel="stylesheet" href="AddStyle.css">
     <title>Dodaj wydatek</title>
 </head>
 
@@ -44,18 +45,20 @@
         </div>
         <div class="mainText">
             <h1>Aplikacja budżetowa</h1>
-            <h2>Dodaj wydatek</h2>
             <form action="/expense">
-                <div>
-                    <label for="amount">Kwota (podaj z kropką)</label>
+                <div class="formTitle">
+                    <h2>Dodaj wydatek</h2>
+                </div>
+                <div class="inputField">
+                    <label for="amount">Kwota (podaj z kropką):</label>
                     <input type="number" placeholder="Wpisz kwotę..." id="amount" required>
                 </div>
-                <div>
-                    <label for="date">Data</label>
+                <div class="inputField">
+                    <label for="date">Data:</label>
                     <input type="date" min="2000-01-01" id="date" required>
                 </div>
-                <div>
-                    <label for="paymentMethod">Sposób płatności</label>
+                <div class="inputField">
+                    <label for="paymentMethod">Sposób płatności:</label>
                     <select name="paymentMethod" id="paymentMethod" required>
                         <option value="">Wybierz metodę płatności</option>
                         <option value="salary">Gotówka</option>
@@ -63,8 +66,8 @@
                         <option value="allegro">Karta kredytowa</option>
                     </select>
                 </div>
-                <div>
-                    <label for="category">Kategoria</label>
+                <div class="inputField">
+                    <label for="category">Kategoria:</label>
                     <select name="category" id="category" required>
                         <option value="">Wybierz kategorię</option>
                         <option value="food">Jedzenie</option>
@@ -86,14 +89,16 @@
                         <option value="other">Inne wydatki</option>
                     </select>
                 </div>
-                <div>
-                    <label for="comment">Komentarz (opcjonalnie)</label>
-                    <div><textarea name="comment" id="comment" cols="30" rows="2" placeholder="Max. 250 znaków..."
+                <div class="comentContainer">
+                    <label for="comment">Komentarz (opcjonalnie):</label>
+                    <div><textarea name="comment" id="comment" rows="2" placeholder="Max. 250 znaków..."
                             maxlength="250"></textarea>
                     </div>
                 </div>
-                <button type="submit">Dodaj</button>
-                <button type="reset">Anuluj</button>
+                <div class="buttonContainer">
+                    <button type="submit">Dodaj</button>
+                    <button type="reset">Anuluj</button>
+                </div>
             </form>
         </div>
     </main>

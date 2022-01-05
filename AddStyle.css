@@ -1,0 +1,64 @@
+form{
+    background-color: rgba(85, 128, 89, 0.7);
+    display: block;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 1em;
+    box-sizing: border-box;
+    color: #f9f9f4;
+    border-radius: 10px;
+    max-width: 400px;
+}
+
+.inputField{
+    display: flex;
+    justify-content: space-between;
+    margin: 0.5em;
+}
+
+.buttonContainer{
+    display: flex;
+justify-content: right;
+margin: 0.5em;
+margin-top: 1em;
+}
+
+button {
+    border: 0;
+    line-height: 2.5;
+    padding: 0px 20px;
+    font-size: 1rem;
+    text-align: center;
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
+    border-radius: 10px;
+    background-color: #2d634f;
+    background-image: linear-gradient(to top left,
+                                      rgba(0, 0, 0, .2),
+                                      rgba(0, 0, 0, .2) 30%,
+                                      rgba(0, 0, 0, 0));
+    box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
+                inset -2px -2px 3px rgba(0, 0, 0, .6);
+    margin-left: 0.5em;
+}
+
+button:hover {
+    background-color: #255040;
+}
+
+button:active {
+    box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),
+                inset 2px 2px 3px rgba(0, 0, 0, .6);
+}
+h2{
+    margin-top: 0;
+    text-align: center;
+}
+
+.comentContainer{
+    width: 100%;
+}
+textarea{
+    width:96%;
+}

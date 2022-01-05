@@ -81,7 +81,7 @@ main div nav{
     height: 1em;
     width: auto;
     margin: 10px;
-    padding: 1.5rem;
+    padding: 1.2rem;
     display: block;
 }
 
@@ -101,4 +101,9 @@ a{
     padding: 0.5em;
     color: #f9f9f4;
     border-radius: 10px;
+}
+
+
+button{
+    cursor: pointer;
 }

@@ -9,6 +9,7 @@
         href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,800&family=Roboto:wght@100;300;500;700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="MainStyle.css">
+    <link rel="stylesheet" href="AddStyle.css">
     <title>Przeglądaj bilans</title>
 </head>
 
@@ -44,22 +45,33 @@
         </div>
         <div class="mainText">
             <h1>Aplikacja budżetowa</h1>
-            <h2>Przeglądaj bilans</h2>
+
             <div>
-                <form action="/balance">
-                    <label for="period">Wybierz okres</label>
-                    <select name="period" id="period">
-                        <option value="currentMonth">Bieżący miesiąc</option>
-                        <option value="previousMonth">Poprzedni miesiąc</option>
-                        <option value="currentYear">Bieżący rok</option>
-                        <option value="other">Niestandardowy</option>
-                    </select>
+                <form action="/balance" class="balanceForm">
                     <div>
-                        <label for="oldestDate">Podaj zakres dat</label>
-                        <input type="date" id="oldestDate">
-                        <input type="date" id="newerDate">
+                        <h2>Przeglądaj bilans</h2>
                     </div>
-                    <button type="submit">Wybierz</button>
+                    <div class="periodContainer">
+                        <label for="period">Wybierz okres:</label>
+                        <select name="period" id="period">
+                            <option value="currentMonth">Bieżący miesiąc</option>
+                            <option value="previousMonth">Poprzedni miesiąc</option>
+                            <option value="currentYear">Bieżący rok</option>
+                            <option value="other">Niestandardowy</option>
+                        </select>
+                    </div>
+                    <div class="inputField">
+                        <label for="oldestDate">Podaj zakres dat:</label>
+                    </div>
+                    <div class="inputField">
+                        <div>
+                            Od: <input type="date" id="oldestDate"></div>
+                        <div>
+                            Do: <input type="date" id="newerDate"></div>
+                    </div>
+                    <div class="buttonContainer">
+                        <button type="submit">Wybierz</button>
+                    </div>
                 </form>
             </div>
         </div>

@@ -1,3 +1,7 @@
+.balanceForm{
+    max-width: 360px;
+}
+
 form{
     background-color: rgba(85, 128, 89, 0.7);
     display: block;
@@ -61,4 +65,13 @@ h2{
 }
 textarea{
     width:96%;
+}
+
+.periodContainer{
+    margin: 0.5em;
+}
+
+select{
+    background-color: white;
+    cursor: pointer;
 }

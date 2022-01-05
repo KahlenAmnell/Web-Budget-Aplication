@@ -1,0 +1,8 @@
+.diagrams{
+    display: flex;
+    flex-direction: row;
+}
+
+.diagrams div{
+    margin-right: 2em;
+}

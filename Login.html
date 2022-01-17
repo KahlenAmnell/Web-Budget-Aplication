@@ -5,54 +5,62 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link
         href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,800&family=Roboto:wght@100;300;500;700&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="MainStyle.css">
-    <link rel="stylesheet" href="LoginStyle.css">
-
-
     <title>Aplikacja budzetowa</title>
 </head>
 
-<body>
+<body class="d-flex flex-column min-vh-100">
     <header>
-        <nav>
-            <div class="mainButton">
-                <a href="Login.html">Home</a>
+        <nav class="navbar navbar-dark bg-success">
+            <div class="ms-3 btn btn-outline-light">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-bar-chart-line" viewBox="0 0 16 16">
+                    <path
+                        d="M11 2a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v12h.5a.5.5 0 0 1 0 1H.5a.5.5 0 0 1 0-1H1v-3a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3h1V7a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v7h1V2zm1 12h2V2h-2v12zm-3 0V7H7v7h2zm-5 0v-3H2v3h2z" />
+                </svg>
+                <a class="navbar-brand mx-2" href="Login.html">Home</a>
             </div>
         </nav>
     </header>
     <main>
-        <div class="header">
-            <h1>Budżet domowy</h1>
+        <div>
+            <h1 class="display-2 mt-5 d-flex justify-content-center">Budżet domowy</h1>
         </div>
-        <form action="/main" id="loginFor">
-            <div class="formTitle">
-                <h2>Logowanie</h2>
-            </div>
-            <div class="inputField">
-                Adres e-mail:
-                <input type="email" placeholder="Adres e-mail" id="email" name="email" required>
-            </div>
-            <div class="inputField">
-                Hasło:
-                <input type="password" placeholder="Hasło" id="password" name="password" autocomplete="current-password"
-                    required>
-            </div>
-            <div class="buttonContainer">
-                <button class="logInButton">Zaloguj</button>
-            </div>
+        <div class="container mt-5 text-light  mx-md-auto mx-sm-5%">
+            <form class="bg-success p-4 mx-auto rounded-3 col-lg-4 col-md-6" action="/main" id="loginFor">
+                <div class="mb-4">
+                    <h2 class="text-center display-5">Logowanie</h2>
+                </div>
+                <div class="form-floating mb-3 text-dark col-9 mx-5">
+                    <input type="email" class="form-control" autofocus id="emailInput" placeholder=" " required>
+                    <label for="emailInput">Adres e-mail</label>
+                </div>
+                <div class="form-floating mb-3 text-dark col-9 mx-5">
+                    <input type="password" class="form-control" autofocus id="passwordInput" placeholder=" " required>
+                    <label for="passwordInput">Hasło</label>
+                </div>
+                <div class="d-flex justify-content-xxl-end justify-content-center me-xxl-5">
+                    <button class="btn btn-outline-light  ">Zaloguj</button>
+                </div>
 
-            <p>Nie masz konta?</p>
-            <div class="signInContainer">
-                <a href="SignIn.html" class="logInButton">Zarejestruj się</a>
-            </div>
-        </form>
+                <p class="d-flex justify-content-xxl-end justify-content-center me-xxl-5 mt-3 mb-1">Nie masz konta?</p>
+                <div class="d-flex justify-content-xxl-end justify-content-center me-xxl-5">
+                    <a href="SignIn.html" class="btn btn-outline-light  ">Zarejestruj się</a>
+                </div>
+            </form>
+        </div>
     </main>
-    <footer>
+    <footer class="mt-auto d-flex justify-content-center">
         <p>Wszelkie prawa zastrzeżone &#169 2021</p>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
 </body>
 
 </html>

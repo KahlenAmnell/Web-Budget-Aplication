@@ -11,7 +11,7 @@
         href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,800&family=Roboto:wght@100;300;500;700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="Style.css">
-    <title>Dodaj wydatek</title>
+    <title>Dodaj przychód</title>
 </head>
 
 <body class="d-flex flex-column min-vh-100">
@@ -41,11 +41,10 @@
     </nav>
     <main class="mx-5">
         <div>
-            <h1 class="display-3 mt-3 d-flex justify-content-center text-center">Dodaj wydatek</h1>
+            <h1 class="display-3 mt-3 d-flex justify-content-center text-center">Dodaj przychód</h1>
         </div>
         <div class="container mt-5 text-light  mx-lg-auto mx-sm-5%">
-            <form class="p-4 mx-auto rounded-3 col-xl-4 col-lg-6 col-md-9 formBackground" action="/expense"
-                id="addExpense">
+            <form class="p-4 mx-auto rounded-3 col-xl-4 col-lg-6 col-md-9 formBackground" action="/income">
                 <div class="mb-3 text-light mx-5">
                     <label for="amount">Kwota (podaj z kropką):</label>
                     <input type="number" class="form-control" placeholder="Wpisz kwotę..." id="amount" required>
@@ -55,34 +54,12 @@
                     <input type="date" class="form-control" min="2000-01-01" id="date" required>
                 </div>
                 <div class="mb-3 text-light col-9 mx-5">
-                    <label for="paymentMethod">Sposób płatności:</label>
-                    <select class="form-select" name="paymentMethod" id="paymentMethod" required>
-                        <option value="">Wybierz metodę płatności</option>
-                        <option value="salary">Gotówka</option>
-                        <option value="bankInterest">Karta debetowa</option>
-                        <option value="allegro">Karta kredytowa</option>
-                    </select>
-                </div>
-                <div class="mb-3 text-light col-9 mx-5">
                     <label for="category">Kategoria:</label>
                     <select class="form-select" name="category" id="category" required>
                         <option value="">Wybierz kategorię</option>
-                        <option value="food">Jedzenie</option>
-                        <option value="apartment">Mieszkanie</option>
-                        <option value="transport">Transport</option>
-                        <option value="telecommunication">Telekomunikacja</option>
-                        <option value="healthcare">Opieka zdrowotna</option>
-                        <option value="clothes">Ubranie</option>
-                        <option value="hygiene">Higiena</option>
-                        <option value="children">Dzieci</option>
-                        <option value="entertainment">Rozrywka</option>
-                        <option value="trip">Wycieczka</option>
-                        <option value="training">Szkolenia</option>
-                        <option value="books">Książki</option>
-                        <option value="savings">Oszczędności</option>
-                        <option value="pension">Na złotą jesię, czyli emeryturę</option>
-                        <option value="debt">Spłata długów</option>
-                        <option value="donation">Darowizna</option>
+                        <option value="salary">Wynagrodzenie</option>
+                        <option value="interest">Odsetki bankowe</option>
+                        <option value="allegro">Sprzedaż na allegro</option>
                         <option value="other">Inne wydatki</option>
                     </select>
                 </div>

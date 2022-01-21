@@ -14,12 +14,12 @@ body{
     background-color: #ffffff75;
 }
 
-.secondNavButton{
-    background-color: #237e37;
+.secondNavColors{
+    background-color: #218d66;
     color: white;
 }
 
-.secondNavButton:hover{
+.buttonHover:hover{
     background-color: white;
 }
 
@@ -29,4 +29,8 @@ body{
 
 .myButton:hover{
     background-color: white;
+}
+
+.formBackground{
+    background-color: #17694b99;
 }

@@ -10,19 +10,20 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,800&family=Roboto:wght@100;300;500;700&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="Style.css">
     <title>Dodaj wydatek</title>
 </head>
 
 <body class="d-flex flex-column min-vh-100">
     <header>
-        <nav class="navbar navbar-dark bg-success">
+        <nav class="navbar navbar-dark" style="background-color: #17694b">
             <div class="ms-3">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white"
                     class="bi bi-bar-chart-line-fill" viewBox="0 0 16 16">
                     <path
                         d="M11 2a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v12h.5a.5.5 0 0 1 0 1H.5a.5.5 0 0 1 0-1H1v-3a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3h1V7a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v7h1V2z" />
                 </svg>
-                <a class="navbar-brand btn btn-outline-light mx-2" href="MainMenu.html">Home</a>
+                <a class="btn btn-outline-light mx-2" href="MainMenu.html">Home</a>
             </div>
             <div class="d-grid gap-2 d-flex justify-content-end">
                 <a class="btn btn-outline-light mx-2" href="Settings.html">Ustawienia</a>
@@ -30,21 +31,22 @@
             </div>
         </nav>
     </header>
-    <nav class="navbar navbar-dark bg-primary">
+    <nav class="navbar navbar-dark sticky-top" style="background-color: #237e37">
         <div>
-            <a class="btn btn-primary  ms-4" href="AddIncome.html" class="mainNavButton">Dodaj przychód</a><a
-                class="btn btn-primary" href="AddExpense.html" class="mainNavButton">Dodaj wydatek</a><a
-                class="btn btn-primary" href="Balance.html" class="mainNavButton">Przeglądaj bilans</a>
+            <a class="btn secondNavButton ms-4" href="AddIncome.html">Dodaj
+                przychód</a><a class="btn secondNavButton" href="AddExpense.html">Dodaj
+                wydatek</a><a class="btn secondNavButton" href="Balance.html">Przeglądaj
+                bilans</a>
         </div>
     </nav>
     <main class="mx-5">
-        <div class="mt-5 mx-lg-auto mx-sm-5% d-flex justify-content-evenly">
-            <div></div>
+        <div class="mt-5 mx-lg-auto mx-sm-5% d-md-flex justify-content-between">
+            <div class="col-1"></div>
             <div>
                 <h1 class="display-3">Przeglądaj bilans</h1>
             </div>
-            <div class="">
-                <form class="p-4 mx-auto" action="/balance" id="balance">
+            <div class="mb-2 tableBackground rounded">
+                <form class="p-2 mx-auto" action="/balance" id="balance">
                     <div class="mb-3 col-12 mx-auto">
                         <label class="d-flex justify-content-center mb-1" for="period">Wybierz
                             okres:</label>
@@ -67,17 +69,17 @@
                         </div>
                     </div>
                     <div class="d-grid gap-2 w-50 mx-auto">
-                        <button class="btn btn-success" type="submit">Wybierz</button>
+                        <button class="btn btn-outline-light myButton" type="submit">Wybierz</button>
                     </div>
                 </form>
             </div>
         </div>
         <div class="d-lg-flex justify-content-lg-evenly">
-            <div class="mb-5">
+            <div class="mb-5 tableBackground h-100">
                 <h3 class="text-center">Przychody</h3>
                 <div class="container-fluid d-xl-flex my-auto">
-                    <table class="table">
-                        <thead class="table-light">
+                    <table class="table table-light me-3">
+                        <thead class="">
                             <tr>
                                 <th>Kategoria</th>
                                 <th>Przychód w kategorii</th>
@@ -113,11 +115,11 @@
                         alt="Diagram kołowy przychodów">
                 </div>
             </div>
-            <div class="mt-lg-0 mt-sm-5">
+            <div class="mt-lg-0 mt-sm-5 rounded tableBackground">
                 <h3 class="text-center">Wydatki</h3>
                 <div class="container-fluid d-xl-flex my-auto">
-                    <table class="table">
-                        <thead class="table-light">
+                    <table class="table table-light me-3">
+                        <thead class="">
                             <tr>
                                 <th>Kategoria</th>
                                 <th>Wydatki w kategorii</th>

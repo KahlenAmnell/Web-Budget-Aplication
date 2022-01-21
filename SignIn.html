@@ -5,52 +5,63 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link
         href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,800&family=Roboto:wght@100;300;500;700&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="MainStyle.css">
-    <link rel="stylesheet" href="LoginStyle.css">
+    <link rel="stylesheet" href="Style.css">
     <title>Aplikacja budżetowa</title>
 </head>
 
-<body>
+<body class="d-flex flex-column min-vh-100">
     <header>
-        <nav>
-            <div class="mainButton">
-                <a href="Login.html">Home</a>
+        <nav class="navbar navbar-dark" style="background-color: #17694b">
+            <div class="ms-3">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white"
+                    class="bi bi-bar-chart-line-fill" viewBox="0 0 16 16">
+                    <path
+                        d="M11 2a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v12h.5a.5.5 0 0 1 0 1H.5a.5.5 0 0 1 0-1H1v-3a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3h1V7a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v7h1V2z" />
+                </svg>
+                <a class="btn btn-outline-light mx-2" href="MainMenu.html">Home</a>
             </div>
         </nav>
     </header>
     <main>
-        <div class="header">
-            <h1>Budżet domowy</h1>
+        <div>
+            <h1 class="display-2 mt-5 d-flex justify-content-center">Budżet domowy</h1>
         </div>
-        <form action="/serwer" id="signForm">
-            <div class="formTitle">
-                <h2>Rejestracja</h2>
-            </div>
-            <div class="inputField">
-                <label for="name">Imię:</label>
-                <input type="text" id="name" placeholder="imię..." required>
-            </div>
-            <div class="inputField">
-                <label for="email">E-mail:</label>
-                <input type="email" id="email" placeholder="e-mail..." required>
-            </div>
-            <div class="inputField">
-                <label for="password">Hasło (min. 6 znaków):</label>
-                <input type="password" id="password" placeholder="hasło..." minlength="6" autocomplete="new-password"
-                    required>
-            </div>
-            <div class="buttonContainer">
-                <button type="submit" class="logInButton" id="signInButton">Utwórz konto</button>
-                <button type="button" class="logInButton"><a href="Login.html">Powrót do logowania</a></button>
-            </div>
-        </form>
+        <div class="container mt-5 text-light  mx-md-auto mx-sm-5%">
+            <form class="formBackground p-4 mx-auto rounded-3 col-lg-4 col-md-6" action="/main" id="loginFor">
+                <div class="mb-4">
+                    <h2 class="text-center display-5">Zarejestruj się</h2>
+                </div>
+                <div class="form-floating mb-3 text-dark col-9 mx-5">
+                    <input type="text" class="form-control" autofocus id="nameRegisterInput" placeholder=" " required>
+                    <label for="nameRegisterInput">Imię</label>
+                </div>
+                <div class="form-floating mb-3 text-dark col-9 mx-5">
+                    <input type="email" class="form-control" autofocus id="emailRegisterInput" placeholder=" " required>
+                    <label for="emailRegisterInput">Adres e-mail</label>
+                </div>
+                <div class="form-floating mb-3 text-dark col-9 mx-5">
+                    <input type="password" class="form-control" autofocus id="passwordRegisterInput" placeholder=" "
+                        required>
+                    <label for="passwordRegisterInput">Hasło</label>
+                </div>
+                <div class="d-grid gap-2 w-50 mx-auto">
+                    <button class="btn btn-outline-light" type="submit" id="signInButton">Utwórz konto</button>
+                    <a class="btn btn-outline-light" href="Login.html">Powrót do logowania</a>
+                </div>
+            </form>
+        </div>
     </main>
-    <footer>
-        Wszelkie prawa zastrzeżone &#169 2021
+    <footer class="mt-auto d-flex justify-content-center">
+        <p>Wszelkie prawa zastrzeżone &#169 2021</p>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

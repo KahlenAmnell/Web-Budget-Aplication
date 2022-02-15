@@ -34,3 +34,7 @@ body{
 .formBackground{
     background-color: #17694b99;
 }
+
+#customDateInput{
+    display: none;
+}
